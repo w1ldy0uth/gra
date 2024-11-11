@@ -1,0 +1,194 @@
+{
+	"info": {
+		"_postman_id": "e8abfc97-9cea-47b9-b1be-8dfa084a403d",
+		"name": "Grails Library App",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13128227",
+		"_collection_link": "https://dark-equinox-741823.postman.co/workspace/REMEDIUM~c313c902-d67e-4001-9393-5b647428f1a9/collection/13128227-e8abfc97-9cea-47b9-b1be-8dfa084a403d?action=share&source=collection_link&creator=13128227"
+	},
+	"item": [
+		{
+			"name": "Get all books",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/grails-library-api/books/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"grails-library-api",
+						"books",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Save book",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"asd\",\n    \"author\": \"sss\",\n    \"coverImageUrl\": \"hh\",\n    \"publicationYear\": 2024,\n    \"description\": \"sdfsdfsd\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/grails-library-api/books/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"grails-library-api",
+						"books",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update book by ID",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"ss\",\n    \"author\": \"sss\",\n    \"coverImageUrl\": \"hh\",\n    \"publicationYear\": 2024,\n    \"description\": \"sdfsdfsd\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/grails-library-api/books/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"grails-library-api",
+						"books",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete book by ID",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/grails-library-api/books/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"grails-library-api",
+						"books",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Rate book",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"value\": 3\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/grails-library-api/books/1/rate",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"grails-library-api",
+						"books",
+						"1",
+						"rate"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
